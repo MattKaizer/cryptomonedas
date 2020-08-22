@@ -26,3 +26,9 @@ body {
 p.precio{
   font-size: 30px!important;
 }
+
+/* img:before - firefox */
+body:not(:-moz-handler-blocked) img:before {
+  padding:125px;
+  background:url('./crypto.png') no-repeat;
+}

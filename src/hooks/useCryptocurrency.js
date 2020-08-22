@@ -20,27 +20,27 @@ const Select = styled.select`
     border: none;
     font-size: 1.2rem;
 `
-const useCurrency = (labelTitle, initState, currencyList) => {
+const useCryptocurrency = (labelTitle, initState, cryptoCurrencyList) => {
 
     //Custom Hook state
-    const [currencyState, setCurrencyState] = useState('');
+    const [cryptoCurrencyState, setCryptoCurrency] = useState('');
 
-        const SelectCurrency = () => (
+        const SelectCryptoCurrency = () => (
             <Fragment>
                 <Label>{labelTitle}</Label>
                 <Select
-                    onChange={e => setCurrencyState(e.target.value)}
-                    value={currencyState}
+                    onChange={e => setCryptoCurrency(e.target.value)}
+                    value={cryptoCurrencyState}
                 >
                     <option value="">-- Seleccione una --</option>
-                    {currencyList.map(option => (
-                        <option key={option.code} value={option.code}>{option.name}</option>
+                    {cryptoCurrencyList.map(option => (
+                        <option key={option.CoinInfo.Id} value={option.CoinInfo.Name}>{option.CoinInfo.FullName}</option>
                     ))}
                 </Select>
             </Fragment>
         )
         //return state, interface and set fn
-        return [currencyState, SelectCurrency, setCurrencyState];
+        return [cryptoCurrencyState, SelectCryptoCurrency, setCryptoCurrency];
 }
  
-export default useCurrency;
+export default useCryptocurrency;
