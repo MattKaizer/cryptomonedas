@@ -1,3 +1,23 @@
+# My Firts ReactJS APP
+
+[link-heroku-preview]()
+
+### Simple React App
+
+## Task Description
+
+This app is a cryto currency quote, build on reactjs, using custom hooks, styled components and axios for api calls to CryptoCompare web.
+
+#### Enum Tech used
+
+* HTML5
+* CSS3
+* JS
+* ReacJS
+* CSS Grid
+
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
